@@ -1,0 +1,96 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    /* font  */
+}
+
+/*  default  */
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-track{
+    width: 2px;
+    background-color: rgba(255,255,255,0.3);
+}
+
+::-webkit-scrollbar-thumb{
+   width: 10px;
+}
+
+
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+.Page{
+    width: 100vw;
+    height: 100vh;
+}
+
+.Left{
+    height: 100vh;
+    width: 45vw;
+}
+
+.Right{
+    height: 100vh;
+    width: 55vw;
+}
+
+.Center{
+    height: 400px;
+    width: 400px;
+   border-radius: 50%;
+   margin-left: -200px;
+   margin-top: -400px;
+   
+}
+
+.CenterHeader{
+    font-size: 70px;
+}
+
+.dots-nav{
+    cursor: pointer;
+}
+
+@media only screen and (max-width : "1200px") {
+    .CenterHeader{
+        font-size: 50px;
+    }
+}
+
+
+@media only screen and (max-width : "700px") {
+    .CenterHeader{
+        font-size: 30px;
+    }
+  
+    .Page{
+        flex-direction: column;
+    }
+    .Left{
+        height: 60vh;
+    }
+
+}
+
+
+body{
+background-color : #5f01a4;
+ background-color : #4d1bca;
+ background-color : #11103a;
+background-color : #19273d;
+ background-color : #1b4ea2;
+ background-color : #1c50a1;
+ background-color : #082b90;
+ background-color : #119852;
+
+}
