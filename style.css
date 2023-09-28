@@ -37,11 +37,13 @@ body{
 .Left{
     height: 100vh;
     width: 45vw;
+    z-index: 2;
 }
 
 .Right{
     height: 100vh;
     width: 55vw;
+    z-index: 1;
 }
 
 .Center{
@@ -49,8 +51,7 @@ body{
     width: 400px;
    border-radius: 50%;
    margin-left: -200px;
-   margin-top: -400px;
-   
+   margin-top: -400px;   
 }
 
 .CenterHeader{
@@ -58,39 +59,122 @@ body{
 }
 
 .dots-nav{
+    height: 20px;
+    width: 20px;
     cursor: pointer;
+    background-color: aqua;
+    border-radius: 50%;
+    padding: 2rem;
 }
+.rightPage{
+    min-height: 100vh;
+    position: relative;
+}
+  
+/*  style right Images */
+.rightCard{
+    height: 60vh;
+}
+
+.rightCard11, .rightCard12{
+   height: 70vh;
+   margin: 10px;
+}
+
+.rightCard21, .rightCard31,.rightCard41,.rightCard71{
+    position: absolute;
+    margin-top: -50px;
+    margin-left: -350px;
+    bottom:0;
+}
+.rightCard22, .rightCard32,.rightCard42,.rightCard72{
+    position: absolute;
+    margin-right: -350px ;
+    margin-top: -50px;
+    top: 0;  
+}
+
+.rightCard43{
+    height: 40vh;
+    position: absolute;
+    top: 0;
+    right:0;
+    margin-top: -200px;
+}
+
+.rightCard44{
+    margin-bottom: -200px;
+    height: 40vh;
+    position: absolute;
+    bottom: 0;
+    right:0;
+}
+.rightCard45{
+    height: 30vh;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+
+
+ /* top */
+.rightCard54{
+    height: 55vh;
+    position: absolute;
+    top: 0;
+    margin-top: -150px;
+    margin-left: 250px ;
+}
+
+.rightCard52{
+    height: 55vh;
+    position: absolute;
+    top: 0;
+    margin-left: -300px;
+    margin-top: -200px;
+}
+/* botttom -0 */
+
+.rightCard53{
+    height: 55vh;
+    position: absolute;
+    bottom: 0;
+    margin-left: -300px;
+    margin-bottom: -150px;
+}
+.rightCard51{
+    height: 55vh;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -200px;
+    margin-left: 250px;
+
+}
+/*  sides */
+.rightCard55{
+    height: 55vh;
+    position: absolute;
+    right: 0;
+
+}
+
+.rightCard61{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    
+}
+.rightCard62{
+    height: 100%;
+    position: absolute;
+}
+
+/*  responsiveness */
 
 @media only screen and (max-width : "1200px") {
     .CenterHeader{
         font-size: 50px;
     }
-}
-
-
-@media only screen and (max-width : "700px") {
-    .CenterHeader{
-        font-size: 30px;
-    }
-  
-    .Page{
-        flex-direction: column;
-    }
-    .Left{
-        height: 60vh;
-    }
-
-}
-
-
-body{
-background-color : #5f01a4;
- background-color : #4d1bca;
- background-color : #11103a;
-background-color : #19273d;
- background-color : #1b4ea2;
- background-color : #1c50a1;
- background-color : #082b90;
- background-color : #119852;
-
 }

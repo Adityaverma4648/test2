@@ -18,25 +18,23 @@
   </head>
   <body>
     <!-- id = "page" -->
-    <main id="page" class="d-flex justify-content-end align-items-end position-relative overflow-y-scroll" style="height: 700vh;">
-        <div class='Left d-flex justify-content-center align-items-end start-0 top-0 position-fixed  mb-1' id="left" style="height: 100vh;" >
-          <div class="w-75 d-flex flex-column justify-content-evenly align-items-start" style="height : 60vh"  >  
-                            <div class="d-flex flex-column justify-content-start align-items-start   overflow-y-hidden fixed-div-1"
-                            style="max-height: 280px;" id="leftContent">
-                              
+    <main id="page" class="d-md-flex d-none flex-md-row flex-sm-column  justify-content-end align-items-end position-relative overflow-y-scroll" style="height: 700vh;">
+        <div class='Left d-flex justify-content-center align-items-end start-0 top-0 position-fixed  mb-1' id="left" >
+          <div class="col-md-9 container-fluid d-flex flex-column justify-content-evenly align-items-start position-relative" style="height : 60vh"  >  
+                            <div>
+                                 <div class="d-flex flex-column justify-content-start align-items-start   overflow-hidden" id="leftImage" style="max-height : 115px" >
+
+                                 </div>
+                                 <div class='d-flex flex-column justify-content-start align-items-start   overflow-y-hidden fixed-div-1' 
+                                 style="max-height: 115px;"
+                                 id="leftContent" >
+
+                                 </div>
+                                 <div class='w-75 d-flex flex-column justify-content-start align-items-start overflow-hidden' id="leftBody" style="max-height: 80px;" ></div>
                             </div>
               
-                            <div class="w-100 d-flex justify-content-between align-items-center fs-5" >
-                            <div class="d-flex justify-content-center align-items-center">
-                            
-                            <a class="text-light text-decoration-none opacity-50" >
-                            Coming Soon
-                            ->
-                            </a>
-                
-                           <a class="text-light text-decoration-none" >
-                            View Case Study ->
-                          </a>
+                            <div class="d-flex justify-content-between align-items-center fs-5 position-fixed bottom-0 mb-5  " style="width: 35%;" >
+                            <div class="d-flex justify-content-center align-items-center" id="leftStatus">
                             </div>
               
                             <a href="" class="text-light text-decoration-none" >SKIP</a>
@@ -47,12 +45,12 @@
                     </div>
         </div>
 
-        <div class="Center z-3 user-select-none position-fixed top-50" id="center" style="left : 45%" >
-                     <div class="d-flex justify-content-end align-items-center" >
+        <div class="Center z-3 user-select-none position-fixed top-50 d-md-block d-none" id="center" style="left : 45%" >
+                     <div class="d-flex justify-content-end align-items-center " >
                        <svg
                          version="1.1"
                          id="transring"
-                         class = "z-2"
+                         style="z-index: 99999999;"
                          xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink"
                          x="0px"
@@ -88,7 +86,7 @@
                            </g>
                            <g>
                              <path
-                               class="dotsstro1"
+                               class="dotsstro1 p-4"
                                style="opacity: 1; fill: none; stroke: rgb(255, 255, 255); stroke-width: 2; stroke-miterlimit: 10;"
                                d="M84,80c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 87, 80, 84,80 z"
                              ></path>
@@ -104,7 +102,7 @@
                            </g>
                            <g>
                              <path
-                               class="dotsstro2"
+                               class="dotsstro2 p-4"
                                style="opacity: 1; fill: none; stroke: rgb(255, 255, 255); stroke-width: 2; stroke-miterlimit: 10;"
                                d="M206.8,29c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6S 210.1,29, 206.8,29 z M206.8"
                              ></path>
@@ -120,7 +118,7 @@
                            </g>
                            <g>
                              <path
-                               class="dotsstro3"
+                               class="dotsstro3 p-4"
                                style="opacity: 1; fill: none; stroke: rgb(255, 255, 255); stroke-width: 2; stroke-miterlimit: 10;"
                                d="M332,85 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 335,85, 332,85 z M332"
                              ></path>
@@ -136,7 +134,7 @@
                            </g>
                            <g>
                              <path
-                               class="dotsstro4"
+                               class="dotsstro4 p-4"
                                style="opacity: 1; fill: none; stroke: rgb(255, 255, 255); stroke-width: 2; stroke-miterlimit: 10;"
                                d="M380,205 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 383,205, 380,205 z M380"
                              ></path>
@@ -152,7 +150,7 @@
                            </g>
                            <g>
                              <path
-                               class="dotsstro5"
+                               class="dotsstro5 p-4"
                                style="opacity: 1; fill: none; stroke: rgb(255, 255, 255); stroke-width: 2; stroke-miterlimit: 10;"
                                d="M335,315 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 340,315, 335,315 z M335"
                              ></path>
@@ -168,7 +166,7 @@
                            </g>
                            <g>
                              <path
-                               class="dotsstro6"
+                               class="dotsstro6 p-4"
                                style="opacity: 1; fill: none; stroke: rgb(255, 255, 255); stroke-width: 2; stroke-miterlimit: 10;"
                                d="M210,375 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 215,375, 210,375 z M210"
                              ></path>
@@ -184,7 +182,7 @@
                            </g>
                            <g>
                              <path
-                               class="dotsstro7"
+                               class="dotsstro7 p-4"
                                style="opacity: 1; fill: none; stroke: rgb(255, 255, 255); stroke-width: 2; stroke-miterlimit: 10;"
                                d="M88,324 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 92,324, 88,324 z M88"
                              ></path>
@@ -195,18 +193,36 @@
                        <div 
                         class="position-fixed text-white d-flex flex-column justify-content-start
                         align-items-center
-                        overflow-x-hidden overflow-y-hidden" style="width : 50vw;  height: 220px; " id="centerContent" >
+                        overflow-x-hidden overflow-y-hidden fixed-div-2" style="width : 50vw;  height: 220px; " id="centerContent" >
                          
                        </div>
                      </div>
         </div>
 
-        <div class='d-flex flex-column justify-content-start align-items-center h-100 Right' 
-        style="width: 55vw"
-        id="rightContent" >
+        <div class='d-flex flex-column justify-content-start align-items-center Right position-relative' 
+        style="width: 55vw; height: 700vh;"
+        id="rightContent">
               
         </div>
     </main>
+  
+
+    <main class="d-md-none d-sm-flex  flex-row  justify-content-center align-items-center position-relative overflow-x-scroll overflow-y-hidden" style="max-height: 100vh;width: 700vw;" id="responsive">
+       
+    </main>
+  <!-- <div>
+    <div class="d-flex flex-column justify-content-start align-items-start   overflow-hidden"  style="max-height : 115px" >
+
+    </div>
+    <div class='d-flex flex-column justify-content-start align-items-start   overflow-y-hidden fixed-div-1' 
+    style="max-height: 115px;" >
+
+    </div>
+    <div class='w-75 d-flex flex-column justify-content-start align-items-start overflow-hidden' style="max-height: 80px;" ></div>
+</div> -->
+
+
+  
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
